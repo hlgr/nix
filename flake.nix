@@ -12,6 +12,10 @@
   let
     configuration = { pkgs, config, ... }: {
       nixpkgs.config.allowUnfree = true;
+      security.pam.enableSudoTouchIdAuth = true;
+      nix.extraOptions = ''
+  extra-platforms = x86_64-darwin aarch64-darwin
+'';
 
 ##### Nix Packages
 
@@ -55,7 +59,35 @@ homebrew = {
     };
 
 	onActivation.cleanup = "zap";
+	onActivation.autoUpdate = true;
+	onActivation.upgrade = true;
 		 };
+		 
+##### System Settings
+	system.defaults = {
+  dock.mru-spaces = false;
+  dock.persistent-apps = [
+  "/System/Library/CoreServices/Finder.app"
+  "/Applications/Firefox.app"
+  "/System/Applications/Mail.app"
+  "/System/Applications/Calendar.app"
+  ];
+  finder.FXPreferredViewStyle = "clmv";
+  	NSGlobalDomain = {
+  AppleMeasurementUnits = "Centimeters";
+  AppleInterfaceStyle = "Dark";
+  AppleTemperatureUnit = "Celsius";
+  AppleShowAllExtensions = true;
+  AppleShowAllFiles = true;
+  AppleICUForce24HourTime = true;
+  AppleMetricUnits = 1;
+  AppleScrollerPagingBehavior = true;
+  "com.apple.mouse.tapBehavior" = 1;
+  "com.apple.swipescrolldirection" = false;
+  "com.apple.trackpad.forceClick" = false;
+  "com.apple.trackpad.scaling" = 0.875;
+  };
+  };
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
