@@ -50,6 +50,7 @@ homebrew = {
 		"google-chrome"
 		"nextcloud"
 		"whatsapp"
+		"horos"
 	];
 
   masApps = {
@@ -67,10 +68,10 @@ homebrew = {
 	system.defaults = {
   dock.mru-spaces = false;
   dock.persistent-apps = [
-  "/System/Library/CoreServices/Finder.app"
   "/Applications/Firefox.app"
   "/System/Applications/Mail.app"
   "/System/Applications/Calendar.app"
+  "/Applications/WhatsApp.app"
   ];
   finder.FXPreferredViewStyle = "clmv";
   	NSGlobalDomain = {
@@ -85,6 +86,7 @@ homebrew = {
   "com.apple.mouse.tapBehavior" = 1;
   "com.apple.swipescrolldirection" = false;
   "com.apple.trackpad.forceClick" = false;
+  "com.apple.trackpad.enableSecondaryClick" = true;
   "com.apple.trackpad.scaling" = 0.875;
   };
   };
