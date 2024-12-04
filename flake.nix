@@ -130,7 +130,7 @@ homebrew = {
             enableRosetta = true;
 
             # User owning the Homebrew prefix
-            user = "holgerhaubenreisser";
+            user = "hlgr";
 
 	    autoMigrate = true;
 
