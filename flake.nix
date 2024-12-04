@@ -40,10 +40,9 @@ homebrew = {
 		"appcleaner"
 		"the-unarchiver"
 		"jdownloader"
-		"threema"
+		"threema@beta"
 		"discord"
 		"microsoft-auto-update"
-		"vanilla"
 		"firefox"
 		"microsoft-teams"
 		"vlc"
@@ -51,12 +50,18 @@ homebrew = {
 		"nextcloud"
 		"whatsapp"
 		"horos"
+		"rectangle-pro"
 	];
 
   masApps = {
+  	"Pages" = 409201541;
+  	"Numbers" = 409203825;
+  	"Keynote" = 409183694;
     "Yoink" = 457622435;
     "CotEditor" = 1024640650;
     "MRIEssentials" = 1178665888;
+    "DaisyDisk" = 411643860;
+    "Hidden Bar" = 1452453066;
     };
 
 	onActivation.cleanup = "zap";
