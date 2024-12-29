@@ -62,6 +62,8 @@ homebrew = {
     "MRIEssentials" = 1178665888;
     "DaisyDisk" = 411643860;
     "Hidden Bar" = 1452453066;
+    "Moliview" = 6502892357;
+    "Nitro Photo" = 1591292532;
     };
 
 	onActivation.cleanup = "zap";
@@ -77,6 +79,7 @@ homebrew = {
   "/System/Applications/Mail.app"
   "/System/Applications/Calendar.app"
   "/Applications/WhatsApp.app"
+  "/System/Applications/Notes.app"
   ];
   finder.FXPreferredViewStyle = "clmv";
   	NSGlobalDomain = {
