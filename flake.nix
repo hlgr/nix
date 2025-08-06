@@ -67,6 +67,7 @@ homebrew = {
     "Nitro Photo" = 1591292532;
     "MS ToDo" = 1274495053;
     "MoneyMoney" = 872698314;
+    "CanaryMail" = 1236045954;
     };
 
 	onActivation.cleanup = "zap";
@@ -80,7 +81,7 @@ homebrew = {
   dock.mru-spaces = false;
   dock.persistent-apps = [
   "/Applications/Firefox.app"
-  "/System/Applications/Mail.app"
+  "/Applications/Canary Mail.app"
   "/System/Applications/Calendar.app"
   "/Applications/WhatsApp.app"
   "/System/Applications/Notes.app"
