@@ -12,7 +12,7 @@
   let
     configuration = { pkgs, config, ... }: {
       nixpkgs.config.allowUnfree = true;
-      security.pam.enableSudoTouchIdAuth = true;
+      security.pam.services.sudo_local.touchIdAuth = true;
       nix.extraOptions = ''
   extra-platforms = x86_64-darwin aarch64-darwin
 '';
@@ -51,6 +51,7 @@ homebrew = {
 		"whatsapp"
 		"horos"
 		"rectangle-pro"
+		"sabnzbd"
 	];
 
   masApps = {
@@ -64,6 +65,8 @@ homebrew = {
     "Hidden Bar" = 1452453066;
     "Moliview" = 6502892357;
     "Nitro Photo" = 1591292532;
+    "MS ToDo" = 1274495053;
+    "MoneyMoney" = 872698314;
     };
 
 	onActivation.cleanup = "zap";
@@ -72,6 +75,7 @@ homebrew = {
 		 };
 		 
 ##### System Settings
+	system.primaryUser = "Holger Haubenreisser";
 	system.defaults = {
   dock.mru-spaces = false;
   dock.persistent-apps = [
