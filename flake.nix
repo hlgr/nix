@@ -60,7 +60,6 @@ homebrew = {
   	"Keynote" = 409183694;
     "Yoink" = 457622435;
     "CotEditor" = 1024640650;
-    "MRIEssentials" = 1178665888;
     "DaisyDisk" = 411643860;
     "Hidden Bar" = 1452453066;
     "Moliview" = 6502892357;
@@ -68,6 +67,7 @@ homebrew = {
     "MS ToDo" = 1274495053;
     "MoneyMoney" = 872698314;
     "CanaryMail" = 1236045954;
+    "Todoist" = 585829637;
     };
 
 	onActivation.cleanup = "zap";
@@ -83,6 +83,7 @@ homebrew = {
   "/Applications/Firefox.app"
   "/Applications/Canary Mail.app"
   "/System/Applications/Calendar.app"
+  "/Applications/Todoist.app"
   "/Applications/WhatsApp.app"
   "/System/Applications/Notes.app"
   ];
